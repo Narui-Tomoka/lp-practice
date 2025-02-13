@@ -7,7 +7,7 @@ footer {
 }
 
 .inner {
-  max-width: 1100px;
+  /* max-width: 1100px; */
   margin: 0 auto;
 }
 
@@ -20,4 +20,31 @@ footer {
 .keyvisual-background-image {
   background: url(../img/keyvisual/keyvisual.jpg) no-repeat center/cover;
   height: 935px;
+  text-align: center;
+  position: relative;
+}
+
+.page-title {
+  display: inline-block;
+  font-size: 65px;
+  font-weight: 700;
+  color: #6ba7eb;
+  margin-bottom: 30px;
+  white-space: nowrap;
+  position: absolute;
+  top: 400px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.page-heading {
+  display: inline-block;
+  font-size: 40px;
+  font-weight: 700;
+  color: #ffffff;
+  white-space: nowrap;
+  position: absolute;
+  top: 495px;
+  left: 50%;
+  transform: translateX(-50%);
 }
