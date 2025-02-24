@@ -11,6 +11,7 @@ footer {
   margin: 0 auto;
 }
 
+/* アイコンとcontactの部分をflexboxで配置 */
 .header-menu-flex {
   display: flex;
   flex-direction: row;
@@ -18,6 +19,13 @@ footer {
   margin-top: 15px;
 }
 
+.d-flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+/* fas fa-archwayのアイコン */
 .page-icon {
   color: #777;
   margin-bottom: 15px;
@@ -39,6 +47,7 @@ footer {
   position: relative;
 }
 
+/* 中央のWEB PRODUCTION COMPANYの部分 */
 .page-title {
   display: inline-block;
   font-size: 65px;
@@ -52,6 +61,7 @@ footer {
   transform: translateX(-50%);
 }
 
+/* DIRECTION,CONTENT MARKETINGの部分 */
 .page-heading {
   display: inline-block;
   font-size: 40px;
@@ -64,20 +74,19 @@ footer {
   transform: translateX(-50%);
 }
 
-.d-grid {
+/* <section>workをgridでレイアウト */
+.work-grid {
   display: grid;
   grid-template:
-    "areaA areaB" auto
-    "areaA areaC" auto
+    "img title    " auto
+    "img paragraph" auto
     / 2fr 3fr;
-}
-
-.work-grid {
   padding-top: 50px;
 }
 
+/* パソコンの画像の親要素 */
 .grid-img {
-  grid-area: areaA;
+  grid-area: img;
 }
 
 .pc-img {
@@ -86,27 +95,62 @@ footer {
   height: auto;
 }
 
-.grid-title {
-  grid-area: areaB;
-  text-align: center;
+/* WORKの文字 */
+.heading {
   font-size: 40px;
   letter-spacing: 10px;
+}
+
+.work-heading {
+  grid-area: title;
+  text-align: center;
   padding: 20px 0 35px;
 }
 
+/* WORKの下のダミー文章 */
 .grid-paragraph {
-  grid-area: areaC;
+  grid-area: paragraph;
   font-size: 15px;
   line-height: 18px;
   word-break: break-all;
 }
 
+/* <section>WORKの背景色指定 */
 .work {
   background: #e3f2fd;
 }
 
-.d-flex {
+.skills-heading {
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.skills-d-flex {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 100px;
+  margin-bottom: 70px;
+}
+
+.skills-img {
+  width: 300px;
+  height: 300px;
+}
+
+.skills-img:last-child {
+  margin-right: 0;
+}
+
+.skills-img:nth-child(4) {
+  margin-bottom: 70px;
+}
+
+.skills-img:nth-child(5) {
+  margin-bottom: 70px;
+}
+
+.skills-img:nth-child(6) {
+  margin-bottom: 70px;
 }
