@@ -39,6 +39,10 @@ footer {
   padding: 12px 14px;
   text-decoration: none;
 }
+.contact:hover {
+  color: #333;
+  transition: all 0.3s;
+}
 
 .keyvisual-background-image {
   background: url(../img/keyvisual/keyvisual.jpg) no-repeat center/cover;
@@ -87,6 +91,7 @@ footer {
 /* パソコンの画像の親要素 */
 .grid-img {
   grid-area: img;
+  place-items: center;
 }
 
 .pc-img {
@@ -121,6 +126,11 @@ footer {
   background: #e3f2fd;
 }
 
+.skills {
+  background: #fff;
+  padding-bottom: 70px;
+}
+
 .skills-heading {
   padding: 50px 0;
 }
@@ -130,12 +140,15 @@ footer {
   flex-wrap: wrap;
   justify-content: center;
   gap: 100px;
-  margin-bottom: 70px;
 }
 
 .skills-img {
   width: 300px;
   height: 300px;
+  opacity: 0.7;
+}
+.skills-img:hover {
+  opacity: 1;
 }
 
 /* <section>PLANの背景色指定 */
@@ -205,4 +218,23 @@ tbody > tr:nth-child(even) {
   overflow: hidden;
   font-size: 40px;
   text-decoration: none;
+}
+.nav-icon:hover {
+  background: #fff;
+  transition: all 0.5s;
+}
+
+footer {
+  background: #cfd8dc;
+}
+
+footer > div {
+  padding-top: 20px;
+  padding-bottom: 25px;
+}
+
+footer p {
+  text-align: right;
+  font-size: 10px;
+  letter-spacing: 0.5px;
 }
