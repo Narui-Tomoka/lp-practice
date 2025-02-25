@@ -183,3 +183,26 @@ tbody > tr:nth-child(odd) {
 tbody > tr:nth-child(even) {
   background: #e0efff;
 }
+
+.sns {
+  background: #e3f2fd;
+  padding: 200px 0;
+}
+
+.sns-list {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.sns-item {
+  width: 185px;
+  text-align: center;
+}
+
+.nav-icon {
+  color: #8c8c8c;
+  overflow: hidden;
+  font-size: 40px;
+  text-decoration: none;
+}
