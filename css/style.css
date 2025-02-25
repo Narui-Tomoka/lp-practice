@@ -99,11 +99,11 @@ footer {
 .heading {
   font-size: 40px;
   letter-spacing: 10px;
+  text-align: center;
 }
 
 .work-heading {
   grid-area: title;
-  text-align: center;
   padding: 20px 0 35px;
 }
 
@@ -113,6 +113,7 @@ footer {
   font-size: 15px;
   line-height: 18px;
   word-break: break-all;
+  text-align: center;
 }
 
 /* <section>WORKの背景色指定 */
@@ -121,9 +122,7 @@ footer {
 }
 
 .skills-heading {
-  text-align: center;
-  margin-top: 50px;
-  margin-bottom: 50px;
+  padding: 50px 0;
 }
 
 .skills-d-flex {
@@ -138,4 +137,49 @@ footer {
   width: 300px;
   height: 300px;
 }
-/* 
+
+/* <section>PLANの背景色指定 */
+.plan {
+  background: #d0dfea;
+  padding-bottom: 50px;
+}
+
+.plan-heading {
+  padding: 50px 0;
+}
+
+.plan-table {
+  display: table;
+  border-collapse: collapse;
+  box-sizing: border-box;
+  table-layout: fixed;
+  width: 100%;
+  text-align: center;
+}
+
+th,
+td {
+  padding: 10px;
+  border-left: 2px solid #fff;
+}
+
+th:first-child {
+  border: none;
+}
+
+thead {
+  background: #6ba7eb;
+}
+
+th {
+  font-size: 16px;
+  line-height: 26px;
+}
+
+tbody > tr:nth-child(odd) {
+  background: #f9f9f9;
+}
+
+tbody > tr:nth-child(even) {
+  background: #e0efff;
+}
