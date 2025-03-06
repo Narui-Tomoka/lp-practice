@@ -67,30 +67,26 @@ main {
   height: 935px;
 }
 
-/* 中央のWEB PRODUCTION COMPANYの部分 */
+/* 中央のWEB PRODUCTION COMPANYの部分と
+DIRECTION,CONTENT MARKETINGの部分 */
+.title-flex {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: center;
+}
+
 .page-title {
   font-size: 65px;
   font-weight: 700;
   color: #6ba7eb;
   margin-bottom: 30px;
-  white-space: nowrap;
-  position: absolute;
-  top: 400px;
-  left: 50%;
-  transform: translateX(-50%);
 }
 
-/* DIRECTION,CONTENT MARKETINGの部分 */
 .page-heading {
-  display: inline-block;
   font-size: 40px;
   font-weight: 700;
   color: #ffffff;
-  white-space: nowrap;
-  position: absolute;
-  top: 495px;
-  left: 50%;
-  transform: translateX(-50%);
 }
 
 /* <section>workをgridでレイアウト */
