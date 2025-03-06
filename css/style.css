@@ -168,6 +168,7 @@ main {
 /* WE ARE SKILLSの6つの画像をmarginの打ち消しを用いてレイアウト */
 .skills-container {
   margin: 0 100px 100px 0;
+  list-style: none;
 }
 .skills-container:nth-child(3n) {
   margin-right: 0;
