@@ -41,7 +41,6 @@ main {
 /* fas fa-archwayのアイコン */
 .page-icon {
   color: #777;
-  margin-bottom: 15px;
 }
 
 .contact {
@@ -60,7 +59,6 @@ main {
 .keyvisual-background-image {
   background: url(../img/keyvisual/keyvisual.jpg) no-repeat center/cover;
   text-align: center;
-  position: relative;
 }
 
 .keyvisual-inner {
@@ -159,6 +157,7 @@ DIRECTION,CONTENT MARKETINGの部分 */
 }
 .skills-img:hover {
   opacity: 1;
+  transition: opacity 0.3s;
 }
 
 /* WE ARE SKILLSの6つの画像をmarginの打ち消しを用いてレイアウト */
@@ -235,16 +234,16 @@ tbody > tr:nth-child(even) {
   width: 185px;
   text-align: center;
 }
+.sns-item:hover {
+  background: #fff;
+  transition: all 0.5s;
+}
 
 .nav-icon {
   color: #8c8c8c;
   overflow: hidden;
   font-size: 40px;
   text-decoration: none;
-}
-.nav-icon:hover {
-  background: #fff;
-  transition: all 0.5s;
 }
 
 footer {
