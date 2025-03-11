@@ -56,13 +56,10 @@ main {
   transition: all 0.3s;
 }
 
-.keyvisual-background-image {
+.keyvisual {
   background: url(../img/keyvisual/keyvisual.jpg) no-repeat center/cover;
   text-align: center;
-}
-
-.keyvisual-inner {
-  height: 935px;
+  padding: 400px 0;
 }
 
 /* 中央のWEB PRODUCTION COMPANYの部分と
