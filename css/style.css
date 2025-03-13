@@ -64,24 +64,20 @@ main {
 
 /* 中央のWEB PRODUCTION COMPANYの部分と
 DIRECTION,CONTENT MARKETINGの部分 */
-.title-flex {
-  display: flex;
-  height: 100%;
-  flex-direction: column;
-  justify-content: center;
-}
 
 .page-title {
   font-size: 65px;
   font-weight: 700;
   color: #6ba7eb;
   margin-bottom: 30px;
+  text-align: center;
 }
 
 .page-heading {
   font-size: 40px;
   font-weight: 700;
   color: #ffffff;
+  text-align: center;
 }
 
 /* <section>workをgridでレイアウト */
@@ -150,11 +146,11 @@ DIRECTION,CONTENT MARKETINGの部分 */
 .skills-img {
   width: 300px;
   height: 300px;
+  transition: opacity 0.3s;
   opacity: 0.7;
 }
 .skills-img:hover {
   opacity: 1;
-  transition: opacity 0.3s;
 }
 
 /* WE ARE SKILLSの6つの画像をmarginの打ち消しを用いてレイアウト */
@@ -229,11 +225,12 @@ tbody > tr:nth-child(even) {
 
 .sns-item {
   width: 185px;
+  padding: 25px 0;
   text-align: center;
+  transition: background-color 0.5s;
 }
 .sns-item:hover {
-  background: #fff;
-  transition: all 0.5s;
+  background-color: #fff;
 }
 
 .nav-icon {
