@@ -121,12 +121,22 @@ DIRECTION,CONTENT MARKETINGの部分 */
   margin-bottom: 30px;
   text-align: center;
 }
+@media screen and (max-width: 767px) {
+  .page-title {
+    font-size: 40px;
+  }
+}
 
 .page-heading {
   font-size: 40px;
   font-weight: 700;
   color: #ffffff;
   text-align: center;
+}
+@media screen and (max-width: 767px) {
+  .page-heading {
+    font-size: 30px;
+  }
 }
 
 /* <section>workをgridでレイアウト */
@@ -265,6 +275,15 @@ thead {
 th {
   font-size: 16px;
   line-height: 26px;
+}
+@media screen and (max-width: 767px) {
+  th {
+    font-size: 14px;
+    line-height: 22px;
+  }
+  td {
+    font-size: 12px;
+  }
 }
 
 tbody > tr:nth-child(odd) {
