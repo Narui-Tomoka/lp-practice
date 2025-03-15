@@ -110,6 +110,11 @@ main {
   text-align: center;
   padding: 400px 0;
 }
+@media screen and (max-width: 767px) {
+  .keyvisual {
+    padding: 200px 0;
+  }
+}
 
 /* 中央のWEB PRODUCTION COMPANYの部分と
 DIRECTION,CONTENT MARKETINGの部分 */
@@ -190,15 +195,15 @@ DIRECTION,CONTENT MARKETINGの部分 */
   word-break: break-all;
   text-align: center;
 }
-@media screen and (max-width: 1199px) {
-  .grid-paragraph {
-    padding-bottom: 50px;
-  }
-}
 
 .work {
   padding-top: 50px;
   background: #e3f2fd;
+}
+@media screen and (max-width) {
+  .work {
+    padding-bottom: 50px;
+  }
 }
 
 /* <section>SKILLS */
@@ -313,11 +318,22 @@ tbody > tr:nth-child(even) {
   background: #e3f2fd;
   padding: 200px 0;
 }
+@media screen and (max-width: 767px) {
+  .sns {
+    padding: 50px 0;
+  }
+}
 
 .sns-list {
   display: flex;
   justify-content: center;
   flex-direction: row;
+}
+@media screen and (max-width: 767px) {
+  .sns-list {
+    flex-direction: column;
+    margin: 0 15px 0;
+  }
 }
 
 .sns-item {
@@ -329,6 +345,12 @@ tbody > tr:nth-child(even) {
 .sns-item:hover {
   background-color: #fff;
 }
+@media screen and (max-width: 767px) {
+  .sns-item {
+    width: 100%;
+    padding: 50px 0;
+  }
+}
 
 .nav-icon {
   color: #8c8c8c;
@@ -339,7 +361,7 @@ tbody > tr:nth-child(even) {
 
 footer {
   background: #cfd8dc;
-  padding: 20px 0 25px;
+  padding: 20px 0;
 }
 
 footer p {
