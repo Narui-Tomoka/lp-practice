@@ -24,6 +24,12 @@ main {
   max-width: 1100px;
   margin: 0 auto;
 }
+@media screen and (max-width: 1199px) {
+  .inner {
+    width: 97%;
+    margin: 0 auto;
+  }
+}
 
 /* アイコンとcontactの部分をflexboxで配置 */
 .header-menu-flex {
@@ -88,6 +94,16 @@ DIRECTION,CONTENT MARKETINGの部分 */
     "img paragraph" auto
     / 2fr 3fr;
 }
+@media screen and (max-width: 1199px) {
+  .work-grid {
+    display: grid;
+    grid-template:
+      "img" auto
+      "title" auto
+      "paragraph" auto
+      / 100%;
+  }
+}
 
 /* パソコンの画像の親要素 */
 .grid-img {
@@ -120,6 +136,11 @@ DIRECTION,CONTENT MARKETINGの部分 */
   line-height: 18px;
   word-break: break-all;
   text-align: center;
+}
+@media screen and (max-width: 1199px) {
+  .grid-paragraph {
+    padding-bottom: 50px;
+  }
 }
 
 .work {
