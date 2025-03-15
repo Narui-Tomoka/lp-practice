@@ -49,6 +49,7 @@ main {
   color: #777;
 }
 
+/* SP/TAB用メニュー */
 .contact {
   display: inline-block;
   color: #ffffff;
@@ -56,10 +57,52 @@ main {
   background-color: #6ba7eb;
   padding: 12px 14px;
   text-decoration: none;
+  margin-left: auto;
 }
 .contact:hover {
   color: #333;
   transition: all 0.3s;
+}
+/* SP用ハンバーガーメニュー */
+.hamburger {
+  display: block;
+  position: relative;
+  width: 60px;
+  height: 43px;
+  border-radius: 5px;
+  background-color: #6ba7eb;
+  transition: opacity 0.3s;
+  z-index: 10;
+}
+.hamburger:hover {
+  cursor: pointer;
+  opacity: 0.7;
+}
+.hamburger i {
+  position: absolute;
+  left: 10px;
+  width: 40px;
+  height: 3px;
+  background-color: #fff;
+}
+.hamburger i:nth-of-type(1) {
+  top: 10px;
+}
+.hamburger i:nth-of-type(2) {
+  top: 20px;
+}
+.hamburger i:nth-of-type(3) {
+  top: 30px;
+}
+@media screen and (max-width: 767px) {
+  .pc_tab_menu {
+    display: none;
+  }
+}
+@media screen and (min-width: 768px) {
+  .sp_menu {
+    display: none;
+  }
 }
 
 .keyvisual {
