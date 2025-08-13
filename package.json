@@ -1,0 +1,27 @@
+{
+  "name": "sass_lp-practice",
+  "version": "1.0.0",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Narui-Tomoka/lp-practice.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Narui-Tomoka/lp-practice/issues"
+  },
+  "homepage": "https://github.com/Narui-Tomoka/lp-practice#readme",
+  "description": "",
+  "dependencies": {
+    "gulp": "^5.0.1",
+    "gulp-sass": "^6.0.1"
+  },
+  "devDependencies": {
+    "sass": "^1.90.0"
+  }
+}

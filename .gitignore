@@ -1,0 +1,36 @@
+# ============================
+# Node.js / gulp プロジェクト用
+# ============================
+
+# 依存パッケージ（npm installで再生成できる）
+node_modules/
+
+# npmログファイル
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# OSやエディタの一時ファイル
+.DS_Store
+Thumbs.db
+*.tmp
+*.log
+
+# gulpコンパイル後のCSSやマップファイル
+css/
+*.css.map
+
+# Sassのキャッシュ
+.sass-cache/
+*.sass-cache
+
+# IDEの設定フォルダ
+.vscode/
+.idea/
+
+# ビルドや配布用フォルダ（必要なら追加）
+dist/
+build/
+
+# 環境変数ファイル（APIキーなど）
+.env
