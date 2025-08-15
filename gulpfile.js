@@ -6,8 +6,8 @@ const sass = require("gulp-sass")(require("sass"));
 
 // scssファイルの監視タスクを作成する
 gulp.task("default", function () {
-  // sassディレクトリ内の拡張子がscssである全てのファイルを監視する
-  return gulp.watch("sass/*.scss", function () {
+  // sassディレクトリとそのサブディレクトリ内の、拡張子がscssである全てのファイルを監視する
+  return gulp.watch("sass/**/*.scss", function () {
     // sassファイルに変更があった場合の処理
     // sassディレクトリ内の拡張子がscssのファイルを取得する
     return (
