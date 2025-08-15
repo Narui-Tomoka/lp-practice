@@ -1,0 +1,23 @@
+// style.scssには直接スタイルは書かない
+// ここには他の_から始まるscssファイルをすべて読み込むだけにする
+
+// base
+@use "base/global";
+@use "base/mixins" as mix;
+// @use 'base/reset';
+@use "base/variables";
+
+// components
+@use "components/button";
+@use "components/keyvisual";
+@use "components/plan";
+@use "components/skills";
+@use "components/sns";
+@use "components/work";
+
+// layout
+@use "layout/footer";
+@use "layout/grid";
+@use "layout/header";
+@use "layout/layout";
+@use "layout/navigation";

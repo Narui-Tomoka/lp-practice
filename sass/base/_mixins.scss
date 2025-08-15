@@ -1,0 +1,5 @@
+// header,main,footerが共通のスタイル（width:100%）を持っているので @mixin で記述してみる
+// 再利用性を高めるために初期値としてwidth:100%を変数に格納
+@mixin global-width($width: 100%) {
+  width: $width;
+}

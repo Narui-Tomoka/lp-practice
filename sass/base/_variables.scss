@@ -1,0 +1,7 @@
+// 変数とその値を格納
+// 変数の値を利用したいときは、「@use + 相対パス」でアクセスする
+// 例）_header.scssからなら @use "../base/variables";
+
+$header-bg-color: #fff;
+$white-p-color: #fff;
+$primary-bg-color: #6ba7eb;

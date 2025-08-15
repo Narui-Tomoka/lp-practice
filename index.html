@@ -4,8 +4,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>lp-practice</title>
-    <link rel="stylesheet" href="css/reset.css" />
-    <link rel="stylesheet" href="css/base.css" />
     <link rel="stylesheet" href="css/style.css" />
     <link
       href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
@@ -21,19 +19,19 @@
   consequat. Duis
   aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
   sint -->
-    <header>
-      <div class="inner header-inner">
-        <nav>
+    <header class="header">
+      <div class="header__inner inner">
+        <nav class="header__nav">
           <!-- PC/TAB用メニュー -->
-          <ul class="header-menu-flex pc_tab_menu">
-            <li><i class="fas fa-archway fa-3x page-icon"></i></li>
-            <li><a href="#" class="contact">Contact</a></li>
+          <ul class="header__menu--flex header__menu--pc-tab">
+            <li class="header__logo"><i class="fas fa-archway fa-3x"></i></li>
+            <li><a href="#" class="header__link">Contact</a></li>
           </ul>
           <!-- PC/TAB用メニューここまで -->
           <!-- SP用ハンバーガーメニュー -->
-          <ul class="header-menu-flex sp_menu">
-            <li><i class="fas fa-archway fa-3x page-icon"></i></li>
-            <li><a href="#" class="hamburger">
+          <ul class="header__menu--flex header__menu--sp">
+            <li class="header__logo"><i class="fas fa-archway fa-3x"></i></li>
+            <li><a href="#" class="header__hamburger">
               <i></i>
               <i></i>
               <i></i>
@@ -42,7 +40,8 @@
         </nav>
       </div>
     </header>
-    <main>
+    次回ここから修正（まずはHTMLから）
+    <main class="main">
       <!-- メインタイトル、サブタイトル、背景画像がある部分 -->
       <section class="keyvisual">
           <div class="inner keyvisual-inner">
@@ -197,7 +196,7 @@
         </div>
       </section>
     </main>
-    <footer>
+    <footer class="footer">
       <div class="inner"><p>Copyright(c)</p></div>
     </footer>
   </body>

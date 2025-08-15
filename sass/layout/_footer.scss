@@ -1,0 +1,5 @@
+@use "../base/mixins" as mix;
+
+.footer {
+  @include mix.global-width;
+}

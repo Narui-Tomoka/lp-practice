@@ -1,0 +1,21 @@
+// .mainやinnerといった他のディレクトリに分類できない・どのsectionにも共通で使うパーツを格納
+@use "../base/mixins" as mix;
+// @mixin の中にあらかじめプロパティ名と値が入っているので
+// 改めてプロパティ名を書く必要はなく「@include ミックスインファイル名.ミックスイン名（引数）の形で書く」
+
+// headerの高さ分のpadding-topを設定することで.mainの内容がheaderの下に入りこむのを防ぐ
+.main {
+  @include mix.global-width;
+  padding-top: 78px;
+}
+
+.inner {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+@media screen and (max-width: 1199px) {
+  .inner {
+    width: 97%;
+    margin: 0 auto;
+  }
+}

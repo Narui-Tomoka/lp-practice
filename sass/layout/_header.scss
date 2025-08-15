@@ -1,0 +1,65 @@
+@use "../base/variables" as vars;
+@use "../base/mixins" as mix;
+
+// position:fixedとtop:0を指定してヘッダーを上部に固定
+.header {
+  @include mix.global-width;
+  position: fixed;
+  top: 0;
+  background-color: vars.$header-bg-color;
+  z-index: 1;
+  padding-top: 15px;
+  &__menu--flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  &__logo {
+    color: #777;
+  }
+  &__link {
+    display: inline-block;
+    color: vars.$white-p-color;
+    font-size: 12px;
+    background-color: vars.$primary-bg-color;
+    padding: 12px 14px;
+    text-decoration: none;
+    margin-left: auto;
+    &:hover {
+      color: #333;
+      transition: all 0.3s;
+    }
+  }
+  &__hamburger {
+    display: block;
+    position: relative;
+    width: 60px;
+    height: 43px;
+    border-radius: 5px;
+    background-color: #6ba7eb;
+    transition: opacity 0.3s;
+    z-index: 10;
+    &:hover {
+      cursor: pointer;
+      opacity: 0.7;
+    }
+    i {
+      position: absolute;
+      left: 10px;
+      width: 40px;
+      height: 3px;
+      background-color: #fff;
+      &:nth-of-type(1) {
+        top: 10px;
+      }
+      &:nth-of-type(2) {
+        top: 10px + 10px;
+      }
+      &:nth-of-type(3) {
+        top: 10px + 20px;
+      }
+    }
+  }
+}
+
+/* アイコンとcontactの部分をflexboxで配置 */
