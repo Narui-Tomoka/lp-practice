@@ -6,7 +6,10 @@ $header-bg-color: #fff;
 $white-color: #fff;
 $primary-bg-color: #6ba7eb;
 $primary-color: #6ba7eb;
-$font-weight-bold: 700;
+$font-bold: 700;
+
+// メディアクエリ用変数
+$sp-tab-width: 97%;
 
 // sassにおけるレスポンシブ対応の書き方
 // メディアクエリとミックスインを組み合わせることで
@@ -19,3 +22,6 @@ $breakpoints: (
 );
 
 // ２．ミックスインの定義
+// mixin専用ファイルに@mixin ○○ の形で定義
+
+// ３．使用したい場所で@includeを使って呼び出す

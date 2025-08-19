@@ -60,28 +60,14 @@
       }
     }
   }
-}
-
-@include mix.mq(sp) {
-  .header__menu--pc-tab {
-    display: none;
+  &__menu--sp {
+    @include mix.mq(tab-pc) {
+      display: none;
+    }
+  }
+  &__menu--pc-tab {
+    @include mix.mq(sp) {
+      display: none;
+    }
   }
 }
-@include mix.mq(tab-pc) {
-  .header__menu--sp {
-    display: none;
-  }
-}
-
-// メディアクエリ
-// 元の記述
-// @media screen and (max-width: 767px) {
-//   .header__menu--pc-tab {
-//     display: none;
-//   }
-// }
-// @media screen and (min-width: 768px) {
-//   .header__menu--sp {
-//     display: none;
-//   }
-// }
