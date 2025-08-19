@@ -5,6 +5,8 @@
 /* あらかじめ用意した_scssファイルのどこに記述しなおせばよいか考え、記述場所を移す */
 /* 値を変数に格納できそうであれば_variables.scssに定義しておいて@useで読み込む */
 
+次回はworkのhtml修正から
+
 /* .d-flexはskillsのところで出てくる */
 .d-flex {
   display: flex;
@@ -12,62 +14,7 @@
   justify-content: space-between;
 }
 
-/* メディアクエリはちょっと難しそうなので後回し */
-@media screen and (max-width: 767px) {
-  .header__menu--pc-tab {
-    display: none;
-  }
-}
-@media screen and (min-width: 768px) {
-  .header__menu--sp {
-    display: none;
-  }
-}
-
-次回ここから
-.keyvisual {
-  background: url(../img/keyvisual/keyvisual.jpg) no-repeat center/cover;
-  text-align: center;
-  padding: 400px 0; /*paddingで表示領域を確保。heightやwidthは用いない*/
-}
-@media screen and (max-width: 1199px) {
-  .keyvisual {
-    padding: 250px 0;
-  }
-}
-@media screen and (max-width: 767px) {
-  .keyvisual {
-    padding: 200px 0;
-  }
-}
-
-/* 中央のWEB PRODUCTION COMPANYの部分と
-DIRECTION,CONTENT MARKETINGの部分 */
-
-.page-title {
-  font-size: 65px;
-  font-weight: 700;
-  color: #6ba7eb;
-  margin-bottom: 30px;
-  text-align: center;
-}
-@media screen and (max-width: 767px) {
-  .page-title {
-    font-size: 40px;
-  }
-}
-
-.page-heading {
-  font-size: 40px;
-  font-weight: 700;
-  color: #ffffff;
-  text-align: center;
-}
-@media screen and (max-width: 767px) {
-  .page-heading {
-    font-size: 30px;
-  }
-}
+レイアウトのところにもメディアクエリがある
 
 /* <section>workをgridでレイアウト */
 .work-grid {

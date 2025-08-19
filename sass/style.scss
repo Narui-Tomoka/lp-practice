@@ -2,10 +2,10 @@
 // ここには他の_から始まるscssファイルをすべて読み込むだけにする
 
 // base
+@use "base/reset";
 @use "base/global";
 @use "base/mixins" as mix;
-// @use 'base/reset';
-@use "base/variables";
+@use "base/variables" as vars;
 
 // components
 @use "components/button";

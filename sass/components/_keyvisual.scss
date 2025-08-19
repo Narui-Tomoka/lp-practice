@@ -1,0 +1,42 @@
+@use "../base/variables" as vars;
+@use "../base/mixins" as mix;
+
+/* 中央のWEB PRODUCTION COMPANYの部分と
+DIRECTION,CONTENT MARKETINGの部分 */
+.keyvisual__title {
+  font-size: 65px;
+  font-weight: $font-weight-bold;
+  color: vars.$primary-color;
+  margin-bottom: 30px;
+  text-align: center;
+}
+@include mix.mq(sp) {
+  .keyvisual__title {
+    font-size: 40px;
+  }
+}
+// 元の記述
+// @media screen and (max-width: 767px) {
+//   .keyvisual__title {
+//     font-size: 40px;
+//   }
+// }
+
+.keyvisual__subtitle {
+  font-size: 40px;
+  font-weight: $font-weight-bold;
+  color: vars.$white-color;
+  text-align: center;
+}
+@include mix.mq(sp) {
+  .keyvisual__subtitle {
+    font-size: 30px;
+  }
+}
+
+// 元の記述
+// @media screen and (max-width: 767px) {
+//   .keyvisual__subtitle {
+//     font-size: 30px;
+//   }
+// }

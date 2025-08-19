@@ -1,5 +1,19 @@
+// メディアクエリ対応で使用する変数$breakpointsを利用するための記述
+@use "sass:map";
+@use "./variables" as vars;
+
 // header,main,footerが共通のスタイル（width:100%）を持っているので @mixin で記述してみる
 // 再利用性を高めるために初期値としてwidth:100%を変数に格納
 @mixin global-width($width: 100%) {
   width: $width;
+}
+
+// レスポンシブ対応で使用するミックスイン
+// @contentはコンテンツブロックというスタイルのブロックを受け取る役目がある
+// @contentをミックスインの中に記述することで、コンテンツブロックをその部分に挿入数することができる
+
+@mixin mq($breakpoint) {
+  @media #{map.get(vars.$breakpoints,$breakpoint)} {
+    @content;
+  }
 }

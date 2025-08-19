@@ -3,5 +3,19 @@
 // 例）_header.scssからなら @use "../base/variables";
 
 $header-bg-color: #fff;
-$white-p-color: #fff;
+$white-color: #fff;
 $primary-bg-color: #6ba7eb;
+$primary-color: #6ba7eb;
+$font-weight-bold: 700;
+
+// sassにおけるレスポンシブ対応の書き方
+// メディアクエリとミックスインを組み合わせることで
+// 効率的にコード量を削減して書くことができる
+// １．ブレイクポイントの定義
+$breakpoints: (
+  "sp-tab": "screen and (max-width: 1199px)",
+  "tab-pc": "screen and (min-width: 768px)",
+  "sp": "screen and (max-width: 767px)",
+);
+
+// ２．ミックスインの定義
