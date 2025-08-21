@@ -1,0 +1,45 @@
+@use "../base/mixins" as mix;
+@use "../base/variables" as vars;
+
+.plan {
+  background: #d0dfea;
+  padding: 50px 0;
+  &__heading {
+    margin-bottom: 50px;
+  }
+  &__table {
+    display: table;
+    border-collapse: collapse;
+    box-sizing: border-box;
+    table-layout: fixed;
+    width: 100%;
+    text-align: center;
+    &-thead {
+      background: vars.$primary-bg-color;
+    }
+    &-head {
+      @include mix.table-padding-line;
+      font-size: 16px;
+      line-height: 26px;
+      @include mix.mq(sp) {
+        font-size: 14px;
+        line-height: 22px;
+      }
+      &:first-child {
+        border: none;
+      }
+    }
+    &-data {
+      @include mix.table-padding-line;
+      @include mix.mq(sp) {
+        font-size: 12px;
+      }
+    }
+    &-tbody > tr:nth-child(odd) {
+      background: #f9f9f9;
+    }
+    &-tbody > tr:nth-child(even) {
+      background: #e0efff;
+    }
+  }
+}

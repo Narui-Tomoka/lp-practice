@@ -1,0 +1,46 @@
+@use "../base/mixins" as mix;
+@use "../base/variables" as vars;
+
+.skills {
+  background: #fff;
+  padding: 50px 0 70px;
+  &__heading {
+    margin-bottom: 50px;
+  }
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    @include mix.mq(sp-tab) {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  &__img {
+    width: vars.$skills-img-size;
+    height: vars.$skills-img-size;
+    transition: opacity 0.3s;
+    opacity: 0.7;
+    display: block; // 意図しない余白を消去するため
+    &:hover {
+      opacity: 1;
+    }
+  }
+  &__item {
+    margin: 0 100px 100px 0;
+    list-style: none;
+    @include mix.mq(sp-tab) {
+      margin: 0;
+    }
+    &:nth-child(3n) {
+      // 3の倍数
+      margin-right: 0;
+      @include mix.mq(sp-tab) {
+        margin-bottom: 80px;
+      }
+    }
+    &:nth-child(-n + 3) {
+      // 最後から3つ
+      margin-bottom: 0;
+    }
+  }
+}

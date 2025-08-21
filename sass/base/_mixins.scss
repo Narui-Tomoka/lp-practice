@@ -8,6 +8,10 @@
   width: $width;
 }
 
+@mixin table-padding-line($border-color: #fff) {
+  padding: 10px;
+  border-left: 2px solid $border-color;
+}
 // レスポンシブ対応で使用するミックスイン
 // @contentはコンテンツブロックというスタイルのブロックを受け取る役目がある
 // @contentをミックスインの中に記述することで、コンテンツブロックをその部分に挿入数することができる

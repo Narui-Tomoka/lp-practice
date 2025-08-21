@@ -1,0 +1,37 @@
+@use "../base/mixins" as mix;
+
+.sns {
+  background: #e3f2fd;
+  padding: 200px 0;
+  @include mix.mq(sp) {
+    padding: 50px 0;
+  }
+  &__list {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    @include mix.mq(sp) {
+      flex-direction: column;
+      margin: 0 15px 0;
+    }
+  }
+  &__item {
+    width: 185px;
+    padding: 25px 0;
+    text-align: center;
+    transition: background-color 0.5s;
+    @include mix.mq(sp) {
+      width: 100%;
+      padding: 50px 0;
+    }
+    &:hover {
+      background-color: #fff;
+    }
+  }
+  &__link {
+    color: #8c8c8c;
+    overflow: hidden;
+    font-size: 40px;
+    text-decoration: none;
+  }
+}
