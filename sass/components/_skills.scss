@@ -6,6 +6,7 @@
   padding: 50px 0 70px;
   &__heading {
     margin-bottom: 50px;
+    @include mix.heading;
   }
   &__list {
     display: flex;
@@ -31,16 +32,16 @@
     @include mix.mq(sp-tab) {
       margin: 0;
     }
+    &:nth-last-child(-n + 3) {
+      // 最後から3つ
+      margin-bottom: 0;
+    }
     &:nth-child(3n) {
       // 3の倍数
       margin-right: 0;
       @include mix.mq(sp-tab) {
         margin-bottom: 80px;
       }
-    }
-    &:nth-child(-n + 3) {
-      // 最後から3つ
-      margin-bottom: 0;
     }
   }
 }

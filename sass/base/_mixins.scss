@@ -8,6 +8,12 @@
   width: $width;
 }
 
+@mixin heading {
+  font-size: 40px;
+  letter-spacing: 10px;
+  text-align: center;
+}
+
 @mixin table-padding-line($border-color: #fff) {
   padding: 10px;
   border-left: 2px solid $border-color;
