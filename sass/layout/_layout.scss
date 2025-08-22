@@ -11,18 +11,10 @@
 }
 
 .inner {
-  max-width: 1100px;
+  max-width: vars.$inner-max;
   margin: 0 auto;
   @include mix.mq(sp-tab) {
     width: vars.$sp-tab-width;
     margin: 0 auto;
   }
 }
-
-// 元のコード
-// @media screen and (max-width: 1199px) {
-//   .inner {
-//     width: 97%;
-//     margin: 0 auto;
-//   }
-// }

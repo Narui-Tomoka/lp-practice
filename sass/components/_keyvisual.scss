@@ -4,9 +4,9 @@
 .keyvisual {
   background: url(../img/keyvisual/keyvisual.jpg) no-repeat center/cover;
   text-align: center;
-  padding: 400px 0; /*paddingで表示領域を確保。heightやwidthは用いない*/
+  padding: 400px 0; // paddingで表示領域を確保。heightやwidthは用いない
   @include mix.mq(sp-tab) {
-    padding: 250px 0; // sassではわざわざ何回も.keyvisualと書かなくてよい
+    padding: 250px 0;
   }
   @include mix.mq(sp) {
     padding: 200px 0;
@@ -31,28 +31,3 @@
     }
   }
 }
-
-// 元の記述
-// @media screen and (max-width: 1199px) {
-//   .keyvisual {
-//     padding: 250px 0;
-//   }
-// }
-// @media screen and (max-width: 767px) {
-//   .keyvisual {
-//     padding: 200px 0;
-//   }
-// }
-
-// @media screen and (max-width: 767px) {
-//   .keyvisual__title {
-//     font-size: 40px;
-//   }
-// }
-
-// 元の記述
-// @media screen and (max-width: 767px) {
-//   .keyvisual__subtitle {
-//     font-size: 30px;
-//   }
-// }

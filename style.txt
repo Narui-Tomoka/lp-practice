@@ -4,12 +4,3 @@
 /* 直す前のclass名をstyle.cssで検索し、該当classを新しい名称に直す */
 /* あらかじめ用意した_scssファイルのどこに記述しなおせばよいか考え、記述場所を移す */
 /* 値を変数に格納できそうであれば_variables.scssに定義しておいて@useで読み込む */
-
-/* .d-flexはskillsのところで出てくる */
-.d-flex {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-
-⭐次回planのscss記述から⭐

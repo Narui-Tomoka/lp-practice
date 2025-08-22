@@ -2,27 +2,36 @@
 // 変数の値を利用したいときは、「@use + 相対パス」でアクセスする
 // 例）_header.scssからなら @use "../base/variables";
 
+$inner-max: 1100px;
 $header-bg-color: #fff;
 $white-color: #fff;
 $primary-bg-color: #6ba7eb;
 $primary-color: #6ba7eb;
+$lightblue-bg: #e3f2fd;
 $font-bold: 700;
 $skills-img-size: 300px;
 
 // メディアクエリ用変数
 $sp-tab-width: 97%;
 
-// sassにおけるレスポンシブ対応の書き方
-// メディアクエリとミックスインを組み合わせることで
-// 効率的にコード量を削減して書くことができる
-// １．ブレイクポイントの定義
 $breakpoints: (
   "sp-tab": "screen and (max-width: 1199px)",
   "tab-pc": "screen and (min-width: 768px)",
   "sp": "screen and (max-width: 767px)",
 );
 
+// sassにおけるレスポンシブ対応の書き方
+
+// １．ブレイクポイントの定義
+//（上記 $breakpoints がこれにあたる）
+
 // ２．ミックスインの定義
 // mixin専用ファイルに@mixin ○○ の形で定義
 
 // ３．使用したい場所で@includeを使って呼び出す
+// @include mix.mq(sp) {
+// （スタイルを書く）
+// }
+
+// メディアクエリとミックスインを組み合わせることで
+// 効率的にコード量を削減して書くことができる

@@ -2,7 +2,7 @@
 @use "../base/variables" as vars;
 
 .skills {
-  background: #fff;
+  background: vars.$white-color;
   padding: 50px 0 70px;
   &__heading {
     margin-bottom: 50px;

@@ -1,7 +1,8 @@
 @use "../base/mixins" as mix;
+@use "../base/variables" as vars;
 
 .sns {
-  background: #e3f2fd;
+  background: vars.$lightblue-bg;
   padding: 200px 0;
   @include mix.mq(sp) {
     padding: 50px 0;

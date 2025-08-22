@@ -1,8 +1,9 @@
 @use "../base/mixins" as mix;
+@use "../base/variables" as vars;
 
 .work {
   padding-top: 50px;
-  background: #e3f2fd;
+  background: vars.$lightblue-bg;
   @include mix.mq(sp-tab) {
     padding-bottom: 50px;
   }
