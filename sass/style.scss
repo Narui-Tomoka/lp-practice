@@ -3,12 +3,10 @@
 
 // base
 @use "base/reset";
-@use "base/global";
 @use "base/mixins" as mix;
 @use "base/variables" as vars;
 
 // components
-@use "components/button";
 @use "components/keyvisual";
 @use "components/plan";
 @use "components/skills";
@@ -17,7 +15,5 @@
 
 // layout
 @use "layout/footer";
-@use "layout/grid";
 @use "layout/header";
 @use "layout/layout";
-@use "layout/navigation";
