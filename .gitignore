@@ -17,8 +17,9 @@ Thumbs.db
 *.log
 
 # gulpコンパイル後のCSSやマップファイル
-css/
-*.css.map
+# 今回は提出のためコメントアウト
+# css/
+# *.css.map
 
 # Sassのキャッシュ
 .sass-cache/
