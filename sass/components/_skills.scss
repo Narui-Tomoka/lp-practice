@@ -32,16 +32,16 @@
     @include mix.mq(sp-tab) {
       margin: 0;
     }
-    &:nth-last-child(-n + 3) {
-      // 最後から3つ
-      margin-bottom: 0;
-    }
     &:nth-child(3n) {
       // 3の倍数
       margin-right: 0;
       @include mix.mq(sp-tab) {
         margin-bottom: 80px;
       }
+    }
+    &:nth-last-child(-n + 3) {
+      // 最後から3つ
+      margin-bottom: 0;
     }
   }
 }

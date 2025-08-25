@@ -8,7 +8,7 @@
   top: 0;
   background-color: vars.$header-bg-color;
   z-index: 1;
-  padding-top: 15px;
+  padding: 15px 0 15px;
   &__menu--flex {
     display: flex;
     flex-direction: row;
